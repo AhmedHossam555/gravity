@@ -50,7 +50,19 @@
     max-width: 1350px;
   }
 }
+/**Responsive**/
+@media (max-width: 772px){
+  .main {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+  }
+}
 
+/****/
 /*header*/
 .header {
   padding-top: 1.4rem;
@@ -110,7 +122,7 @@
 /************************/
 /* start main section */
 .main {
-  width: 584px;
+  max-width: 584px;
   height: 392px;
   margin: 1rem auto 300px;
   text-align: center;
@@ -148,4 +160,13 @@
 }
 /*End main section*/
 /* *************** */
-/*  */
+/* Start about section */
+.about > h3 {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 78px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* End about Section */
