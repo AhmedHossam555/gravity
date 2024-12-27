@@ -50,19 +50,7 @@
     max-width: 1350px;
   }
 }
-/**Responsive**/
-@media (max-width: 772px){
-  .main {
-    h1 {
-      font-size: 40px;
-    }
-    h2 {
-      font-size: 35px;
-    }
-  }
-}
 
-/****/
 /*header*/
 .header {
   padding-top: 1.4rem;
@@ -170,3 +158,25 @@
 }
 
 /* End about Section */
+
+
+
+
+
+
+
+/**Responsive**/
+@media (max-width: 772px){
+  .main {
+    h1 {
+      font-size: 50px !important;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 45px !important;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/****/
