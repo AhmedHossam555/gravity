@@ -7,6 +7,8 @@
 }
 :root {
   --bg-main: #141619;
+  --main-color:#E5E5E5;
+
 }
 .page {
   background-color: var(--bg-main);
@@ -77,7 +79,6 @@
   line-height: 24px;
   letter-spacing: 0.5px;
   text-align: left;
-  text-decoration-skip-ink: none;
 }
 .header > button {
   background-color: transparent;
@@ -123,7 +124,6 @@
   margin-bottom: 2.5rem;
 }
 .main > h2 {
-  font-family: Inter;
   font-size: 74px;
   font-weight: 500;
   line-height: 86px;
@@ -154,19 +154,163 @@
   font-weight: 500;
   line-height: 78px;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
+.about > p {
+  max-width: 612px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 2.5rem;
 
+}
+.about > .measure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .box1 {
+    text-align: center;
+    h3 {
+      font-size: 32px;
+      line-height: 57.8px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 160px;
+    }
+  }
+  .box2 {
+    h3 {
+      font-size: 40px;
+      line-height: 68px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 30px;
+      color: #fff !important;
+      max-width: 214px;
+    }
+  }
+  .box3 {
+    h3 {
+      font-size: 39px;
+      line-height: 68px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 165px;
+    }
+  }
+  .box4 {
+    h3 {
+      font-size: 38px;
+      line-height: 68px;
+    }
+    p {
+      font-size: 19px;
+      line-height: 30px;
+      max-width: 209px;
+    }
+  }
+  .box5 {
+    h3 {
+      font-size: 37px;
+      line-height: 68px;
+    }
+    p {
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+  .box6 {
+    h3 {
+      font-size: 39px;
+      line-height: 68px;
+    }
+    p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    }
+  }
+  .box7 {
+    h3 {
+      font-size: 38px;
+      line-height: 68px;  
+    }
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  .box8 {
+    h3 {
+      font-size: 38px;
+      line-height: 68px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+}
+.about > .measure > .box  {
+  width: 264px;
+  padding: 2rem;
+  text-align: center;
+  h3 {
+    font-weight: 500;
+  }
+  p {
+    font-weight: 400;
+    color: var(--main-color);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.line {
+    height: 2px;
+    position:absolute;
+    width: 1052px;
+    background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+    top: 55%;
+}
+.line-h {
+  position: absolute;
+  width: 2px;
+  height: 352px;
+  background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+}
+.line-h1 {
+  left: 27%;
+}
+.line-h2 {
+  left: 50%;
+}
+.line-h3 {
+  left: 74%;
+}
 /* End about Section */
-
-
-
 
 
 
 
 /**Responsive**/
 @media (max-width: 772px){
+  .header {
+    ul {
+      display: none;
+    }
+  }
   .main {
     h1 {
       font-size: 50px !important;
@@ -178,5 +322,10 @@
     }
   }
 }
-
+@media (max-width: 1200px) {
+  .line,.line-h {
+    display: none;
+  }
+  
+}
 /****/
