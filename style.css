@@ -304,7 +304,9 @@
 /* End about Section */
 /* start marking section */
 .marking {
+  position: relative;
   text-align: center;
+  z-index: 8;
   h1 {
     font-size: 56px;
     font-weight: 500;
@@ -361,6 +363,16 @@
           line-height: 30px;
           text-align: left;
         }
+      ::before {
+        content: '';
+        top: 30px;
+        display: block;
+        z-index: 22;
+        position: relative;
+        width: 99.84px;
+        height: 2px;
+        background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+      }
       }
       
     }
@@ -456,6 +468,15 @@
         }
       }
     }
+  }
+  .blog {
+    width: 2038.89px;
+    height: 2018.93px;
+    position: absolute;
+    top: -458.32px;
+    left: -953px;
+    transform: rotate(-60deg);
+    z-index: -1;
   }
 }
 
