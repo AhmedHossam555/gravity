@@ -14,6 +14,7 @@
   background-color: var(--bg-main);
   min-height: 100vh;
   font-family: "Inter", serif;
+  overflow: hidden;
 }
 /* media query container */
 .container {
@@ -307,6 +308,7 @@
   position: relative;
   text-align: center;
   z-index: 8;
+  margin-bottom: 10rem;
   h1 {
     font-size: 56px;
     font-weight: 500;
@@ -480,8 +482,9 @@
   }
   .card2 {
     display: flex;
+    flex-wrap: wrap;
     gap: 150px;
-    margin-top: 100px;
+    margin-top: 150px;
     .item1 {
       display: flex;
       flex-direction: column;
@@ -508,6 +511,7 @@
         line-height: 28px;
         text-align: left;
         margin-bottom: 1rem;
+        max-width: 392px;
       }
       .para2 {
         font-size: 19px;
@@ -516,6 +520,7 @@
         text-align: left;
         color: var(--main-color);
         margin-bottom: 1.5rem;
+        max-width: 422px;
       }
       a {
         text-decoration: none;
@@ -544,7 +549,196 @@
 }
 
 /* end marking section */
+/* start friends */
+.friends {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+  margin-bottom: 4rem;
+  h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 78px;
+    max-width: 400px;
+  }
+  .bit {
+    width: 408px;
+    height: 696px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .bitmap1 {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: -280px;
+      div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+      }
+      > div {
+        width: 192px;
+        height: 192px;
+        padding: 56px 56px 25px 56px;
+        border-radius: 4px 0px 0px 0px;
+        border: 1px 0px 0px 0px;
+        background: linear-gradient(180deg, rgba(65, 85, 114, 0.15) 0%, rgba(27, 27, 30, 0.1) 100%);
+        border: 1px solid #41557280;
+        span {
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: center;
+          display: block;
+          color: #999;
 
+        }
+
+      }
+    }
+    .bitmap2{
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 255px;
+      div:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+      }
+      > div {
+        width: 192px;
+        height: 192px;
+        padding: 56px 56px 25px 56px;
+        border-radius: 4px 0px 0px 0px;
+        border: 1px 0px 0px 0px;
+        background: linear-gradient(180deg, rgba(65, 85, 114, 0.15) 0%, rgba(27, 27, 30, 0.1) 100%);
+        border: 1px solid #41557280;
+        span {
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: center;
+          display: block;
+          color: #999;
+
+        }
+
+      }
+    }
+    ::before,::after {
+      content: '';
+      position: absolute;
+      width: 408px;
+      height: 152px;
+      background:#141619;
+      opacity: 0.1;
+    }
+    ::before {
+      left:0;
+      top: -40px;
+    }
+    ::after {
+      bottom: -28px;
+      left:0;
+    }
+  }
+
+}
+/* end friends */
+/* start blog */
+.blogs {
+  h1 {
+    font-size: 57px;
+    font-weight: 500;
+    line-height: 78px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    max-width: 602px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+  .carsouil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    button {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button:last-child {
+      transform: rotate(-180deg);
+    }
+  }
+  .para1{
+    margin-bottom: 2rem;
+  }
+  .para2 {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    span {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 18.4px;
+      position: relative;
+    }
+    span::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 32px;
+      background-color: #666;
+      top: -6px;
+      left: 190px;
+
+    }
+  }
+  span {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+  }
+  .slide {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    span {
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      background: #333333;
+    }
+    span.active {
+      background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+    }
+  }
+}
+/* end blog */
+/* start team section */
 
 /**Responsive**/
 @media (max-width: 772px){
