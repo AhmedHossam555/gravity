@@ -209,6 +209,8 @@ html {
   align-items: center;
   flex-wrap: wrap;
   max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 5rem;
   .box1 {
     text-align: center;
