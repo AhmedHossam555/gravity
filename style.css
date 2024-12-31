@@ -8,7 +8,9 @@
 :root {
   --bg-main: #141619;
   --main-color:#E5E5E5;
-
+}
+html {
+  scroll-behavior: smooth;
 }
 .page {
   background-color: var(--bg-main);
