@@ -108,6 +108,36 @@
   border-radius: 0.5rem;
   background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
 }
+.header .toggle {
+  display: none;
+}
+.header .dropdown {
+  display: none;
+}
+.header .dropdown.active {
+  transition: all 0.1s ease;
+  backdrop-filter: blur(15px);
+  position: absolute;
+  top: 70px;
+  right: 2rem;
+  width: 300px;
+  border-radius: 5px;
+  z-index: 55;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  li {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  li:hover {
+    background-color: #323233;
+  }
+}
 /*End Header*/
 /************************/
 /* start main section */
@@ -146,6 +176,7 @@
   border-radius: 2px;
   border: none;
   cursor: pointer;
+  text-transform: uppercase;
 }
 /*End main section*/
 /* *************** */
@@ -566,7 +597,7 @@
     z-index: 444;
   }
   .bit {
-    width: 408px;
+    width: 408px; 
     height: 696px;
     overflow: hidden;
     display: flex;
@@ -869,6 +900,7 @@
     border-radius: 2px;
     border: none;
     cursor: pointer;
+    text-transform: uppercase;
   }
   .imgs {
     img {
@@ -964,9 +996,16 @@
 /**Responsive**/
 @media (max-width: 772px){
   .header {
-    ul {
+    .links {
       display: none;
     }
+    button {
+      display: none;
+    }
+    .toggle {
+      display: inline-block;
+    }
+
   }
   .main {
     h1 {
@@ -981,6 +1020,9 @@
   .card2 {
     margin-top: 450px !important;
   }
+  .bit {
+    display: none !important;
+  }
 }
 @media (max-width: 1200px) {
   .line,.line-h {
@@ -989,3 +1031,25 @@
   
 }
 /****/
+
+
+.hidden {
+  opacity: 0;
+  transform: translateY(60px);
+}
+.show {
+  opacity: 1;
+  transition: all 0.4s ease;
+  transform: translateY(0);
+  transition-delay: 450ms;
+}
+.hidden-para {
+  opacity: 0;
+  transform: translateY(60px);
+}
+.show-para {
+  opacity: 1;
+  transition: all 0.5s linear;
+  transform: translateY(0);
+  transition-delay: 650ms;
+}
